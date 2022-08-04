@@ -1,5 +1,7 @@
 # GERADOR DE FREQUÊNCIAS
 
+Simples interface para geração de ruído de áudio nas frequências das notas musicais ou qualquer uma dentre as frequências audíveis pelo ser humano.
+
 # Requisitos
 
 node v12.20.1

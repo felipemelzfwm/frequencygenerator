@@ -1,0 +1,60 @@
+web api: https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API
+synthesis library: https://github.com/oampo/Audiolet/wiki/Your-First-Synth
+begginer tutorial: https://www.html5rocks.com/en/tutorials/webaudio/intro/#:~:text=The%20Web%20Audio%20API%20is%20a%20high-level%20JavaScript,are%20found%20in%20modern%20desktop%20audio%20production%20applications.
+real-time audio synthesis and composition
+
+https://webaudioapi.com/samples/
+
+details of the API's groundbase: https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API
+
+An important point to note is that on iOS, Apple currently mutes all sound output until the first time a sound is played during a user interaction event - for example, calling playSound() inside a touch event handler. You may struggle with Web Audio on iOS "not working" unless you circumvent this - in order to avoid problems like this, just play a sound (it can even be muted by connecting to a Gain Node with zero gain) inside an early UI event - e.g. "touch here to play".
+
+Software: spectrum analyzer pro live
+
+audio theory: https://teropa.info/blog/2016/08/10/frequency-and-pitch.html
+	decibéis: https://teropa.info/blog/2016/08/30/amplitude-and-loudness.html
+Variations of the Frequency Sensitivity depending on the level:	https://www.audiocheck.net/soundtests_nonlinear.php
+
+harmonics-explorer: https://teropa.info/harmonics-explorer/
+
+As you play with the sound here, you're likely to notice that you are unable to hear anything on frequencies lower than 20Hz or higher than 20kHz. 20Hz-20kHz is the typical range audible to humans. It's not exactly the same for everyone though, and also tends to decrease in the higher end with age.
+tabela frequencias notas musicais: https://www.liutaiomottola.com/formulae/freqtab.htm#:~:text=Table%20of%20Musical%20Notes%20and%20Their%20Frequencies%20and,%20%20%20%2077%20more%20rows%20
+
+IIR Filter: https://developer.mozilla.org/en-US/docs/Web/API/IIRFilterNode
+	https://codepen.io/Rumyra/pen/oPxvYB/
+
+ConvolverNode: https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode
+	creates a reverb effect
+
+PannerNode: https://developer.mozilla.org/en-US/docs/Web/API/PannerNode
+	represents the position and behavior of an audio source signal in space.
+	example: https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createPanner#example
+
+AnalyserNode: https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode
+
+Visualization: https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Visualizations_with_Web_Audio_API
+
+WaveShaperNode: https://developer.mozilla.org/en-US/docs/Web/API/WaveShaperNode
+
+Proccess audio: https://developer.mozilla.org/en-US/docs/Web/API/AudioWorklet
+	https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletProcessor
+	https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletProcessor/process
+	http://www.openmha.org/docs/openMHA_plugins.pdf
+	
+DelayNode: https://developer.mozilla.org/en-US/docs/Web/API/DelayNode
+
+DynamicsCompressorNode: https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode
+	 lowers the volume of the loudest parts of the signal in order to help prevent clipping and distortion that can occur when multiple sounds are played and multiplexed together at once.
+
+
+	
+changing-speed-of-audio-using-the-web-audio-api:
+	https://stackoverflow.com/questions/31274895/changing-speed-of-audio-using-the-web-audio-api-without-changing-pitch
+
+http://pd-tutorial.com/english/ch03s07.html
+http://pd-tutorial.com/english/ch02.html
+
+
+granular synthesis:
+	https://blog.demofox.org/2018/03/05/granular-audio-synthesis/
+	https://granularsynthesis.com/guide.php

@@ -1,0 +1,14 @@
+buttons:
+	startProgram
+	StopProgram
+	play frequency
+	stop frequency
+	
+slider:
+	setFrequency
+	volume
+
+tasks:
+	PannerNode
+	input from file
+	input from microphone
